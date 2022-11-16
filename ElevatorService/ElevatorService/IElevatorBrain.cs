@@ -3,7 +3,7 @@ namespace ElevatorServer.ElevatorService
 {
     public interface IElevatorBrain
     {
-        Task AddFromFloorRequest(FromFloorRequest request);
-        Task AddToFloorRequest(ToFloorRequest request);
+        Task AddFromFloorRequest(FromRequest request);
+        Task AddToFloorRequest(ToRequest request);
     }
 }

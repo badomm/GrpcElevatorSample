@@ -1,12 +1,12 @@
 ﻿namespace ElevatorServer.ElevatorService;
 
-public class FromFloorRequest
+public class FromRequest
 {
     public int FloorNumber { get; set; }
     public ElevatorMoveDirection Direction { get; set; }
 }
 
-public class ToFloorRequest
+public class ToRequest
 {
     public int FloorNumber { get; set; }
     public int ElevatorId { get; set; }

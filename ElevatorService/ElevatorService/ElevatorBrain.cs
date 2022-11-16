@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace ElevatorServer.ElevatorService;
+﻿namespace ElevatorServer.ElevatorService;
 
 public class ElevatorBrain : IElevatorBrain
 {
@@ -13,7 +11,7 @@ public class ElevatorBrain : IElevatorBrain
         _logger = logger;
     }
 
-    public async Task AddFromFloorRequest(FromFloorRequest request)
+    public async Task AddFromFloorRequest(FromRequest request)
     {
         var elevators = await _comService.GetAllElevatorState();
 
@@ -31,7 +29,7 @@ public class ElevatorBrain : IElevatorBrain
 
     }
 
-    public async Task AddToFloorRequest(ToFloorRequest request)
+    public async Task AddToFloorRequest(ToRequest request)
     {
         await _comService.IssueCommand(
             new ElevatorCommand()

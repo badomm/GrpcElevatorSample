@@ -2,7 +2,8 @@
 
 public enum ElevatorMoveDirection
 {
-    UP,
-    DOWN,
-    NONE
+    UP = 3,
+    DOWN = 2,
+    NONE = 0,
+    STANDBY = 1,
 }

@@ -1,4 +1,6 @@
+
 using ElevatorServer.ElevatorService;
+using ElevatorServer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +22,7 @@ builder.Services.AddSingleton<IElevatorBrain, ElevatorBrain>();
 builder.Services.AddHostedService<ElevatorRunnerBackgroundService>();
 
 var app = builder.Build();
-
+// Configure the HTTP request pipeline.
+app.MapGrpcService<ElevatorService>();
 
 app.Run();

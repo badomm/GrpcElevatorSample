@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorDisplay", "ElevatorTerminal\ElevatorDisplay.csproj", "{D1086FB9-CD19-4BD7-8D02-E88B20A2A28F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorInputTerminal", "ElevatorInputTerminal\ElevatorInputTerminal.csproj", "{0A8B273F-562B-4C99-9F64-C8F45F301E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{D1086FB9-CD19-4BD7-8D02-E88B20A2A28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1086FB9-CD19-4BD7-8D02-E88B20A2A28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1086FB9-CD19-4BD7-8D02-E88B20A2A28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8B273F-562B-4C99-9F64-C8F45F301E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8B273F-562B-4C99-9F64-C8F45F301E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8B273F-562B-4C99-9F64-C8F45F301E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8B273F-562B-4C99-9F64-C8F45F301E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{24DE3DAD-EA03-4029-AF9F-7E086582172D} = {2BC2042A-CB6E-4A56-873D-4CEE9B21BF73}
 		{BDD3454A-A233-4B4E-A3BD-A9E95B86F770} = {2BC2042A-CB6E-4A56-873D-4CEE9B21BF73}
 		{D1086FB9-CD19-4BD7-8D02-E88B20A2A28F} = {2BC2042A-CB6E-4A56-873D-4CEE9B21BF73}
+		{0A8B273F-562B-4C99-9F64-C8F45F301E2C} = {2BC2042A-CB6E-4A56-873D-4CEE9B21BF73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0C96DA4A-8F1D-411B-889F-653401E5559B}

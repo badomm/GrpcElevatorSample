@@ -1,0 +1,49 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option csharp_namespace = "ElevatorGrpc";
+
+package ElevatorGrpc;
+
+service ElevatorService {
+  rpc GetStatus (google.protobuf.Empty) returns (stream StatusReply);
+  rpc RequestToFloor (ToFloorRequest) returns (google.protobuf.Empty);
+  rpc RequestFromFloor (FromFloorRequest) returns (google.protobuf.Empty);
+}
+
+enum Direction {
+	NONE = 0;
+	STANDBY = 1;
+	DOWN = 2;
+	UP = 3;
+}
+ 
+// The request message containing the user's name.
+message FromFloorRequest {
+	int32 floorNumber = 1;
+	Direction direction = 2;
+}
+
+// The response message containing the greetings.
+message ToFloorRequest {
+	int32 elevatorId = 1;
+	int32 floorNumber = 2;
+	bool emergencyStop =3;
+}
+
+message StatusReply {
+	repeated ElevatorStatus ElevatorStatuses = 1;
+}
+
+message ElevatorStatus {
+	int32 elevatorId = 1;
+	Direction currentDirection = 2;
+	double currentFloor = 3;
+	bool doorOpen = 4;
+	repeated Order currentOrders = 5;
+}
+
+message Order
+{
+	int32 floorNumber = 1;
+	double ETA = 2;
+}
